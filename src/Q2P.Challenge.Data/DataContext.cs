@@ -18,7 +18,7 @@ namespace Q2P.Challenge.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=q2pchallengecb;Trusted_Connection=True;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=q2pchallengedb;Trusted_Connection=True;TrustServerCertificate=true;");
         }
 
         public DbSet<Company> Companies { get; set; }
